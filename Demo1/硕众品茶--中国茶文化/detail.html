@@ -1,0 +1,142 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>硕果--详情</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+ <link rel="shortcut icon" href="img/logo.ico" sizes="15*15">
+<link href="css/bootstrap.min.css" rel='stylesheet' type='text/css' />
+<link href="css/style.css" rel='stylesheet' type='text/css' />
+<link rel="stylesheet" href="css/etalage.css">
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script src="js/bootstrap.min.js" type="text/javascript" charset="utf-8"></script>
+<script src="js/jquery.etalage.min.js"></script>
+<script>
+	jQuery(document).ready(function($){
+
+		$('#etalage').etalage({
+			thumb_image_width: 300,
+			thumb_image_height: 400,
+			source_image_width: 900,
+			source_image_height: 1200,
+			show_hint: true,
+			click_callback: function(image_anchor, instance_id){
+				alert('Callback example:\nYou clicked on an image with the anchor: "'+image_anchor+'"\n(in Etalage instance: "'+instance_id+'")');
+			}
+		});
+
+	});
+	addEventListener("load", function() { 
+		setTimeout(hideURLbar, 0); }, false);
+	function hideURLbar(){ window.scrollTo(0,1); } 
+</script>
+</head>
+<body>
+	
+<div class="wrap">	
+	<!--头部+导航菜单Start-->
+ <header>
+	<nav class="navbar navbar-default  navbar-inverse" role="navigation">
+	  <div class="container">
+	    <!-- 移动端 -->
+	    <div class="navbar-header">
+	      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+	        <span class="sr-only">Toggle navigation</span>
+	        <span class="icon-bar"></span>
+	        <span class="icon-bar"></span>
+	        <span class="icon-bar"></span>
+	      </button>
+	      <a class="navbar-brand" style="padding: 1px 50px;" href="#"><img src="img/logo.png"/></a>
+	    </div>
+
+    <!-- PC端 -->
+	    <div class="collapse navbar-collapse " id="bs-example-navbar-collapse-1">
+	      <ul class="nav navbar-nav">
+	        <li class="active"><a href="index.html">主页</a></li>
+	         <li class="dropdown">
+	          <a href="#" class="dropdown-toggle" data-toggle="dropdown">茶文化科普 <span class="caret"></span></a>
+	          <ul class="dropdown-menu" role="menu">
+	            <li><a href="population.html">茶的分类</a></li>
+	            <li class="divider"></li>
+	            <li><a href="#">茶的功效</a></li>
+	            <li class="divider"></li>
+	            <li><a href="#">泡茶小技巧</a></li>
+	            <li class="divider"></li>
+	            <li><a href="#">【茶文化】</a></li>
+	          </ul>
+	        </li>
+	        <li><a href="good.html">产品</a></li>
+	        <li><a href="#">养生论坛</a></li>
+	        <li><a href="#">在线调查</a></li> 
+	      </ul>     
+	    </div>
+	  </div>
+</nav>
+ </header>
+<!--头部+导航菜单End-->
+<div class="container">   
+<div class="content">
+  <div class="content_box">
+	<div class="men">
+	  <div class="single_top">
+	       <div class="col-md-12 single_right">
+	   	       <div class="grid images_3_of_2">
+						<ul id="etalage">
+							<li>
+								<a href="optionallink.html">
+									<img class="etalage_thumb_image" src="img/l8.jpg" class="img-responsive" />
+									<img class="etalage_source_image" src="img/l8.jpg" class="img-responsive" title="" />
+								</a>
+							</li>
+							<li>
+								<img class="etalage_thumb_image" src="img/l9.jpg" class="img-responsive"  />
+								<img class="etalage_source_image" src="img/l9.jpg"class="img-responsive"  />
+							</li>
+							<li>
+								<img class="etalage_thumb_image" src="img/l7.jpg" class="img-responsive" />
+								<img class="etalage_source_image" src="img/l7.jpg" class="img-responsive" title="" />
+							</li>
+							<li>
+								<img class="etalage_thumb_image" src="img/l5.jpg" class="img-responsive"  />
+								<img class="etalage_source_image" src="img/l5.jpg"class="img-responsive"  />
+							</li>
+						    <li>
+								<img class="etalage_thumb_image" src="img/l6.jpg" class="img-responsive"  />
+								<img class="etalage_source_image" src="img/l6.jpg"class="img-responsive"  />
+							</li>
+							
+						</ul>
+						 <div class="clearfix"></div>		
+				  </div> 
+				  <div class="desc1 span_3_of_2">
+				    <h1>【硕众品茶】</h1>
+				    <p class="m_5">--硕果礼盒装 <span class="reducedfrom">促销价</span> <a href="#">￥68</a></p>
+				    <div class="btn_form">
+						<form>
+							<input type="submit" value="buy" title="">
+						</form>
+					 </div>
+					<p class="m_text2">
+						硕众品茶——硕果，采用2016年明前通版冰岛生普，8粒/盒，小礼品首选，外出携带方便，一粒一泡茶。<br />	
+						<marquee direction=right><h4 style="color: #449D44;">见证一泡茶的演绎(⊙o⊙)！</h4><br/>	</marquee>
+					</p>
+					
+					<img src="img/detail2.jpg" style="width:200px;border: 15px solid #ffffff;"/>
+					<img src="img/detail1.jpg" style="width:200px;float: left;border: 15px solid #ffffff;"/>
+					 </div>
+				  <div class="clearfix"></div>	
+       </div>      
+      <div class="clearfix"> </div>
+     </div>
+   </div>
+</div>	
+</div>	
+</div>	
+</div>	
+<footer style="background-color: #ADADAD;height: 80px;width: 100%;text-align: center;color: #FFFFFF;font-size: 16px;padding-top: 10px;">
+	<p style="color: brown;font-size: 20px;">广州市硕哥贸易有限公司——硕众品茶</p>
+	地址：番禺区沙湾镇大涌路566号&nbsp;&nbsp;硕众品茶
+</footer>
+
+</body>
+</html>		

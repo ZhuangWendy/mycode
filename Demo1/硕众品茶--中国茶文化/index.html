@@ -1,0 +1,294 @@
+﻿<!DOCTYPE html>
+<html lang="zh-cn">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>茶文化主页</title>
+    <link rel="shortcut icon" href="img/logo.ico" sizes="15*15">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/mystyle.css" />
+    <link rel="stylesheet" href="css/jquery.vm-carousel.css" />
+    <script type="text/javascript" src="js/echarts.min.js" ></script>
+    <script src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/jquery.vm-carousel.js" ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.js"></script>
+  </head>
+
+  <body>
+  <a name="toptop"></a>
+ <!--头部+导航菜单Start-->
+ <header>
+ 	
+<div id="myCarousel" class="carousel slide mytop">
+    <!-- 轮播（Carousel）指标 -->
+    <ol class="carousel-indicators">
+        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+        <li data-target="#myCarousel" data-slide-to="1"></li>
+        <li data-target="#myCarousel" data-slide-to="2"></li>
+    </ol>   
+    <!-- 轮播（Carousel）项目 -->
+    <div class="carousel-inner">
+        <div class="item active">
+            <img src="img/head2.jpg" class="img-responsive" alt="First slide">
+        </div>
+        <div class="item">
+            <img src="img/head4.jpg"  class="img-responsive" alt="Second slide">
+        </div>
+        <div class="item">
+            <img src="img/head3.jpg" class="img-responsive" alt="Third slide">
+        </div>
+    </div>
+    <!-- 轮播（Carousel）导航 -->
+    <a class="carousel-control left" href="#myCarousel" 
+        data-slide="prev">&lsaquo;
+    </a>
+    <a class="carousel-control right" href="#myCarousel" 
+        data-slide="next">&rsaquo;
+    </a>
+</div>
+
+
+
+ 	<nav class="navbar navbar-default navbar-fixed-top navbar-inverse" role="navigation">
+	  <div class="container">
+	    <!-- 移动端 -->
+	    <div class="navbar-header">
+	      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+	        <span class="sr-only">Toggle navigation</span>
+	        <span class="icon-bar"></span>
+	        <span class="icon-bar"></span>
+	        <span class="icon-bar"></span>
+	      </button>
+	      <a class="navbar-brand" style="padding: 1px 50px;" href="#"><img src="img/logo.png"/></a>
+	    </div>
+
+    <!-- PC端 -->
+	    <div class="collapse navbar-collapse " id="bs-example-navbar-collapse-1">
+	      <ul class="nav navbar-nav">
+	        <li class="active"><a href="index.html">主页</a></li>
+	         <li class="dropdown">
+	          <a href="#" class="dropdown-toggle" data-toggle="dropdown">茶文化科普 <span class="caret"></span></a>
+	          <ul class="dropdown-menu" role="menu">
+	            <li><a href="population.html">茶的分类</a></li>
+	            <li class="divider"></li>
+	            <li><a href="#">茶的功效</a></li>
+	            <li class="divider"></li>
+	            <li><a href="#">泡茶小技巧</a></li>
+	            <li class="divider"></li>
+	            <li><a href="#">【茶文化】</a></li>
+	          </ul>
+	        </li>
+	        <li><a href="good.html">产品</a></li>
+	        <li><a href="#">养生论坛</a></li>
+	        <li><a href="#">在线调查</a></li> 
+	      </ul>     
+	    </div>
+	  </div>
+</nav>
+ </header>
+<!--头部+导航菜单End-->
+ 
+
+<div class="container-fluid">
+  <div class="col-md-2 myleft">
+  	<div class="myclock">
+  	<p id="calendarClock1"></p>
+  	<p id="calendarClock2"></p>
+  	<p style="margin-bottom: 0px;"><b id="calendarClock3"></b>
+  	<b id="calendarClock4"></b></p>
+  	</div>
+  </div>
+  
+  <div class="mycenter col-md-7">
+  	<div class="panel panel-warning">
+    <div class="panel-heading">茶文化科普<a href="population.html" style="float: right;text-decoration: none;">more&gt;&gt;</a></div>
+    <div class="panel-body">
+     	<ul>
+     		<a href="population.html" style="text-decoration: none;"><li>&nbsp;&nbsp;茶的分类 </li></a>
+     		<li>&nbsp;&nbsp;茶的功效</li>
+     		<li>&nbsp;&nbsp;泡茶小技巧</li>
+     		<li>【茶文化】哪些减肥茶最好呢&mdash; 减肥茶排名介绍  </li>
+     		<li>【茶文化】中国十大茶叶排行榜介绍 </li>
+     	</ul>	
+    </div>
+    </div>
+    
+    <div class="panel panel-warning">
+    <div class="panel-heading">养生论坛<b style="float: right;">more&gt;&gt;</b></div>
+    <div class="panel-body">
+        <ul>
+     		<li>喝茶有哪些好处与坏处呢&mdash;喝茶好处与坏处介绍 <b style="float: right;">2016-10-26</b></li>
+     		<li>喝茶有哪些好处与坏处呢&mdash;喝茶好处与坏处介绍 <b style="float: right;">2016-10-26</b></li>
+     		<li>喝茶有哪些好处与坏处呢&mdash;喝茶好处与坏处介绍 <b style="float: right;">2016-10-26</b></li>
+     		<li>喝茶有哪些好处与坏处呢&mdash;喝茶好处与坏处介绍 <b style="float: right;">2016-10-26</b></li>
+     		<li>喝茶有哪些好处与坏处呢&mdash;喝茶好处与坏处介绍<b style="float: right;">2016-10-26</b> </li>
+     	</ul>	
+    </div>
+    </div>
+    
+    <div class="panel panel-warning">
+    <div class="panel-heading">推荐<b style="float: right;font-size: 15px;">产品&gt;&gt;</b></div>
+    <div class="panel-body">
+		<ul class="vmcarousel-centered-infitine gun">
+		  <li><img src="img/gun1.jpg" class="img-rounded alt="gun1">大叶种滇红</li>
+		  <li><img src="img/gun2.jpg" class="img-rounded alt="gun2" >凤凰多丛茶</li>
+		  <li><img src="img/gun3.jpg" class="img-rounded alt="gun3" >硕果</li>
+		  <li><img src="img/gun4.jpg" class="img-rounded alt="gun4" >小柠红</li>
+		  <li><img src="img/gun5.jpg" class="img-rounded alt="gun5" >喜茶饼</li>
+		  <li><img src="img/gun6.jpg" class="img-rounded alt="gun6" >精品冰岛</li>
+		</ul> 
+    </div>
+    </div>
+    </div>
+ 
+  <div class="myright col-md-3" id="test">
+  	<h1>在线调查</h1>
+  	<ol>
+  		<div >
+  		 <li>您平时喜欢喝茶吗？</li>
+  			<label class="radio-inline">
+			  <input type="radio" name="like" id="inlineRadio1" value="1" checked> 喜欢
+			  </label><br />
+				<label class="radio-inline">
+				  <input type="radio" name="like" id="inlineRadio2" value="2"> 一般
+				</label><br />
+				<label class="radio-inline">
+				  <input type="radio" name="like" id="inlineRadio3" value="3"> 不喜欢
+				</label>	
+		
+			<li>您最经常喝的是什么茶？</li>
+  		    <label class="radio-inline">
+			  <input type="radio" name="eat" id="inlineRadio1" value="1" checked> 乌龙茶
+			    </label><br />
+				<label class="radio-inline">
+				  <input type="radio" name="eat" id="inlineRadio2" value="2"> 红茶
+				</label><br />
+				<label class="radio-inline">
+				  <input type="radio" name="eat" id="inlineRadio3" value="3"> 绿茶
+				</label><br />
+				<label class="radio-inline">
+				  <input type="radio" name="eat" id="inlineRadio4" value="4"> 黑茶
+				</label><br />
+				<label class="radio-inline">
+				  <input type="radio" name="eat" id="inlineRadio5" value="5"> 白茶
+				</label><br />
+				<label class="radio-inline">
+				  <input type="radio" name="eat" id="inlineRadio6" value="6"> 不喝茶
+				</label>
+			
+  		<li>您喝茶的频率是？</li>
+  			<label class="radio-inline">
+			  <input type="radio" name="rate" id="inlineRadio1" value="1" checked> 一天几次
+			</label><br />
+			<label class="radio-inline">
+			  <input type="radio" name="rate" id="inlineRadio2" value="2"> 一天一次
+			</label><br />
+			<label class="radio-inline">
+			  <input type="radio" name="rate" id="inlineRadio3" value="3"> 三天一次
+			</label><br />
+			<label class="radio-inline">
+			  <input type="radio" name="rate" id="inlineRadio4" value="4"> 一周一次
+			</label><br />
+			<label class="radio-inline">
+			  <input type="radio" name="rate" id="inlineRadio5" value="5"> 偶尔喝
+			</label><br />
+			<label class="radio-inline">
+			  <input type="radio" name="rate" id="inlineRadio6" value="6"> 无规律
+			</label><br />
+				<button type="submit" class="btn btn-default" id="btn1" onclick="_onclick()">提交</button>	
+  		</div>
+		<script type="text/javascript">
+		var like1=0;like2=0;like3=0;
+		var eat1=2;eat2=4;eat3=5;eat4=3;eat5=1;eat6=0;
+		var rate1=0;rate2=0;rate3=0;rate4=0;rate5=0;rate6=0;
+		function _onclick() {
+         var radiolike = document.getElementsByName("like");
+         var radioseat = document.getElementsByName("eat");
+         var radiosrate = document.getElementsByName("rate");
+		    for (i = 0; i < radiolike.length; i++) {
+		        if (radiolike[i].checked && radiolike[i].getAttribute("value")=='1') {
+		            like1++;
+		            break;
+		        }else if(radiolike[i].checked && radiolike[i].getAttribute("value")=='2'){
+		        	like2++;
+		        	break;
+		        }else  if(radiolike[i].checked && radiolike[i].getAttribute("value")=='3'){
+		        	like3++;
+		        	break;
+		        }
+		        
+            }
+//		    console.log(like2);
+		    for (i = 0; i < radioseat.length; i++) {
+		        if (radioseat[i].checked && radioseat[i].getAttribute("value")=='1') {
+		            eat1++;
+		            break;
+		        }else if(radioseat[i].checked && radioseat[i].getAttribute("value")=='2'){
+		        	eat2++;
+		        	break;
+		        }else if(radioseat[i].checked && radioseat[i].getAttribute("value")=='3'){
+		        	eat3++;
+		        	break;
+		        }else if(radioseat[i].checked && radioseat[i].getAttribute("value")=='4'){
+		        	eat4++;
+		        	break;
+		        }else if(radioseat[i].checked && radioseat[i].getAttribute("value")=='5'){
+		        	eat5++;
+		        	break;
+		        }else if(radioseat[i].checked && radioseat[i].getAttribute("value")=='6'){
+		        	eat6++;
+		        	break;
+		        }
+            }
+		    for (i = 0; i < radiosrate.length; i++) {
+		        if (radiosrate[i].checked && radiosrate[i].getAttribute("value")=='1') {
+		            rate1++;
+		            break;
+		        }else if(radiosrate[i].checked && radiosrate[i].getAttribute("value")=='2'){
+		        	rate2++;
+		        	break;
+		        }else if(radiosrate[i].checked && radiosrate[i].getAttribute("value")=='3'){
+		        	rate3++;
+		        	break;
+		        }else if(radiosrate[i].checked && radiosrate[i].getAttribute("value")=='4'){
+		        	rate4++;
+		        	break;
+		        }else if(radiosrate[i].checked && radiosrate[i].getAttribute("value")=='5'){
+		        	rate5++;
+		        	break;
+		        }else if(radiosrate[i].checked && radiosrate[i].getAttribute("value")=='6'){
+		        	rate6++;
+		        	break;
+		        }
+            }
+        }   
+//统计图的显示      
+			$(document).ready(function(){
+				$("#btn1").click(function(){
+					$('#test').load('demo_test.html');
+				})
+			})
+//图片轮播
+			jQuery(function($){
+		      $('.vmcarousel-centered-infitine').vmcarousel({
+		         centered: true,
+		         start_item: 1,
+		         autoplay: false,
+		         infinite: true
+		      });
+		   });		
+		</script>
+  	</ol>
+  </div>
+</div>
+<footer style="background-color: #ADADAD;height: 80px;width: 100%;text-align: center;color: #FFFFFF;font-size: 16px;">
+	<p style="color: brown;font-size: 20px;">广州市硕哥贸易有限公司——硕众品茶</p>
+	地址：番禺区沙湾镇大涌路566号&nbsp;&nbsp;硕众品茶
+	<a href="#toptop"><img src="img/TOP3.png" style="float: right;margin:-35px 35px;"/></a>
+</footer>
+
+	  <script type="text/javascript" src="js/myjs.js" ></script>
+    <script src="js/bootstrap.min.js"></script>
+  </body>
+</html>

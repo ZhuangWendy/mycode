@@ -1,0 +1,104 @@
+﻿<!DOCTYPE html>
+<html lang="zh-cn">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>茶文化主页</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/mystyle.css" />
+      <script type="text/javascript" src="js/echarts.min.js" ></script>
+  </head>
+  <body>
+  	<div class="myright col-md-3">
+  	<h1>调查结果</h1>
+  	<ol style="width: 280px;">
+		<div id="demo1" style="width: 240px; height: 300px;margin: auto -15px;"></div>
+		<div id="demo2" style="width: 280px; height: 360px;margin: auto -15px;"></div>
+		<div id="demo3" style="width: 240px; height: 300px;margin: auto -15px;"></div>
+		</ol>
+		</div>
+		<script type="text/javascript">
+ 		 var  myChart = echarts.init(document.getElementById('demo1'));
+			var option = {
+				title: {
+					text:'1、您平时喜欢喝茶吗？'
+				},
+				tooltip: {},
+				legend: {
+					data:['调查']
+				},
+				xAxis: {
+					data:["喜欢","一般","不喜欢"]
+				},
+				yAxis: {},
+				series: [{
+					name: '人数',
+					type: 'bar',
+					data:[like1, like2, like3]
+				}]
+			};
+			myChart.setOption(option);		
+			
+			var  myChart = echarts.init(document.getElementById('demo2'));
+			var option = {
+				title: {
+					text:'2、您最经常喝的是什么茶？'
+				},
+				tooltip: {},
+				legend: {
+					data:['调查']
+				},
+				
+				series: [{
+					name: '人数',
+					type: 'pie',
+					radius: [0,'60%'],
+					data:
+				[{
+				    name: '乌龙茶',
+				    value: eat1
+				 
+				}, {
+				    name: '红茶',
+				    value: eat2
+				},{
+				    name: '绿茶',
+				    value: eat3
+				},{
+				    name: '黑茶',
+				    value: eat4
+				},{
+				    name: '白茶',
+				    value: eat5
+				},{
+				    name: '不喝茶',
+				    value: eat6
+				}]
+				}]
+			};
+			myChart.setOption(option);	
+			
+			var  myChart = echarts.init(document.getElementById('demo3'));
+			var option = {
+				title: {
+					text:'3、您喝茶的频率是？'
+				},
+				tooltip: {},
+				legend: {
+					data:['调查']
+				},
+				xAxis: {data:["一天几次","一天一次","三天一次","一周一次","偶尔喝","无规律"] },
+				yAxis: { },
+				series: [{
+					name: '人数',
+					type: 'bar',
+					data:[rate1, rate2, rate3,rate4,rate5,rate6]
+				}]
+			};
+			myChart.setOption(option);		
+		</script>
+	</body>
+</html>
+		
+         

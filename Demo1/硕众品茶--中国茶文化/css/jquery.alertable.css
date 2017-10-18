@@ -1,0 +1,67 @@
+
+/* Modal */
+.alertable {
+    position: fixed;
+    z-index: 9999;
+    top: 30vh;
+    left: calc(40% - 150px);
+    width: 500px;
+    height: 300px;
+    background-image: url(../img/time.jpg);
+    border-radius: 4px;
+    padding: 20px;
+    margin: 0 auto;
+}
+
+/* Overlay */
+.alertable-overlay {
+    position: fixed;
+    z-index: 9998;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(0, 0, 0, .5);
+}
+
+/* Message */
+.alertable-message {
+	margin-top: 50%;
+    /*margin-bottom: 38%;*/
+    font-size: 20px;
+    float: left;
+}
+
+
+/* Button group */
+.alertable-buttons {
+    text-align:right;
+}
+
+/* OK button */
+.alertable-ok {
+	margin-top: 50%;
+	display: block;
+	float: right;
+    background: #F0AD4E;
+    border: solid 1px #F0AD4E;
+    font-family: inherit;
+    font-size: inherit;
+    color: white;
+    border-radius: 4px;
+    padding: 8px 14px;
+    margin-left: 9px;
+    cursor: pointer;
+}
+
+.alertable-ok:hover,
+.alertable-ok:focus,
+.alertable-ok:active {
+    background-color: #F2DEDE;
+}
+
+.alertable-cancel:hover,
+.alertable-cancel:focus,
+.alertable-cancel:active {
+    background-color: #F2F2F2;
+}
